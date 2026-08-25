@@ -1,0 +1,58 @@
+/* css reset - boa prática */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;/*Garante que o body ocupe no minimo 100% da altura do viewport*/
+
+}
+ul {
+  display: flex;
+  list-style: none; /* Remove as bolinhas/estilo de lista */
+  padding: 0;       /* Remove o espaçamento interno padrão da ul */
+  margin: 0;        /* Remove as margens padrão da ul */
+  gap: 20px;        /* Espaço entre os itens */
+  justify-content: center; /* alinha os itens horizontalmente*/
+  align-items: center;/* alinha os itens verticalmente*/
+}
+
+.logo {
+    width: 4vw;
+    max-height: 8vh;
+}
+.home {
+    
+    max-height: 100vh;
+}
+h2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    color:#fff;
+    text-align: center;
+    background-color: #220c3b;
+    margin-top: auto; /*Empurra o footer para o final do viewport*/
+}
+
+footer a {
+    text-decoration: none;
+    color: #dbd5e0;
+}
+
+footer a:hover {
+    text-decoration:  underline;
+}
