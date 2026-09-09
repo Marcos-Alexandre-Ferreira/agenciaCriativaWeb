@@ -16,19 +16,30 @@ body {
     min-height: 100vh;/*Garante que o body ocupe no minimo 100% da altura do viewport*/
 
 }
-ul {
-  display: flex;
-  list-style: none; /* Remove as bolinhas/estilo de lista */
-  padding: 0;       /* Remove o espaçamento interno padrão da ul */
-  margin: 0;        /* Remove as margens padrão da ul */
-  gap: 20px;        /* Espaço entre os itens */
-  justify-content: center; /* alinha os itens horizontalmente*/
-  align-items: center;/* alinha os itens verticalmente*/
-}
+
+.ulheader {
+    display: flex;
+    list-style: none; /* Remove as bolinhas/estilo de lista */
+    padding: 0;       /* Remove o espaçamento interno padrão da ul */
+    margin: 0;        /* Remove as margens padrão da ul */
+    gap: 20px;        /* Espaço entre os itens */
+    justify-content: center; /* alinha os itens horizontalmente*/
+    align-items: center;/* alinha os itens verticalmente*/
+
+    position: fixed;
+    top: 0;          /* Cola no topo da tela */
+    left: 0;         /* Cola na esquerda */
+    width: 100%;     /* Garante que o menu ocupe toda a largura */
+    z-index: 1000;   /* Garante que o menu fique ACIMA dos outros elementos */
+    background-color: #ffffff; /* Fundo opaco necessário para não transparecer o texto rolado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar o efeito de flutuação */
+    }
+
 .logo {
     width: 4vw;
     max-height: 8vh;
 }
+
 .home {
     max-height: 100vh;
     align-items: center;/* alinha os itens verticalmente*/
@@ -44,6 +55,44 @@ figure img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.sobre {
+    margin: 2%;
+    text-align: justify;
+}
+
+.servicos p {
+
+    text-align: center;
+
+}
+
+.ulservicos {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 4 colunas de tamanhos iguais */
+    grid-template-rows: repeat(3, 1fr);  /* Define 3 linhas de tamanhos iguais */  
+    gap: 16px; /* Espaçamento opcional entre os itens */
+    align-items: first baseline;/* alinha os itens verticalmente*/
+    list-style: none;
+    margin: 1%;
+}
+
+.liservicos {
+
+    border: 2px solid #420000;
+    border-radius: 15px;
+    padding: 8%;
+    background-color: #fffed0;
+    transition: background-color 0.5s ease;
+    cursor: pointer; /* Transforma o ponteiro em "mãozinha" */
+}
+
+.liservicos:hover {
+
+    background-color: #f8c1a9;
+    
 }
 
 /*footer*/
