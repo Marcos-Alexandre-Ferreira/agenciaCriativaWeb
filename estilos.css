@@ -25,19 +25,25 @@ ul {
   justify-content: center; /* alinha os itens horizontalmente*/
   align-items: center;/* alinha os itens verticalmente*/
 }
-
 .logo {
     width: 4vw;
     max-height: 8vh;
 }
 .home {
-    
     max-height: 100vh;
+    align-items: center;/* alinha os itens verticalmente*/
 }
+
 h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*footer*/
