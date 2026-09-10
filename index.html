@@ -21,7 +21,7 @@
     </header>
     <section id="home">
         <figure>
-            <img  class="home" src="img/home.png" alt="Home">
+            <img  class="imghome" src="img/home.png" alt="Home">
         </figure>
     </section>
     <section id="sobre">
@@ -47,9 +47,36 @@
     </section>
     <section id="depoimentos">
         <h2>Depoimentos</h2>
+        <ul class="uldepoimentos">
+            <li class="lidepoimentos"><figure><img class="iconuser" src="img/usuario.png" alt="Icone de Usuário"></figure><h6>Usuário 1</h6>
+                <p>Atendimento impecável e entregas no prazo! Superaram todas as nossas expectativas</p>
+            </li>
+            <li class="lidepoimentos"><figure><img class="iconuser" src="img/usuario.png" alt="Icone de Usuário"></figure><h6>Usuário 2</h6>
+                <p>Equipe extremamente profissional e atenciosa. Recomendo de olhos fechados!</p>
+            </li>
+            <li class="lidepoimentos"><figure><img class="iconuser" src="img/usuario.png" alt="Icone de Usuário"></figure><h6>Usuário 3</h6>
+                <p>Excelente qualidade e suporte nota 10. Com certeza faremos novos projetos juntos!</p>
+            </li>
+            <li class="lidepoimentos"><figure><img class="iconuser" src="img/usuario.png" alt="Icone de Usuário"></figure><h6>Usuário 4</h6>
+                <p>Transformaram nossa ideia em realidade com muita precisão e eficiência. Parceria nota mil!</p>
+            </li>
+        </ul>
     </section>
     <section id="contato">
         <h2>Contato</h2>
+        <form id="Form">
+
+            <label for="nome">Nome:</label>
+            <input type="name" id="nome" name="nome" placeholder="Insira seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{4,15}" placeholder="(99)99999-9999" required>
+
+            <button type="submit" id="botaoSave">Cadastrar</button>
+        </form>
     </section>
     <footer class="rodape">
         <p>&copy; 2026 Marcos Alexandre - Todos os direitos reservados</p>

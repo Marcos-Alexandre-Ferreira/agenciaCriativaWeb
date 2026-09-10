@@ -6,17 +6,14 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 body {
-    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;/*Garante que o body ocupe no minimo 100% da altura do viewport*/
-
 }
-
 .ulheader {
     display: flex;
     list-style: none; /* Remove as bolinhas/estilo de lista */
@@ -25,7 +22,6 @@ body {
     gap: 20px;        /* Espaço entre os itens */
     justify-content: center; /* alinha os itens horizontalmente*/
     align-items: center;/* alinha os itens verticalmente*/
-
     position: fixed;
     top: 0;          /* Cola no topo da tela */
     left: 0;         /* Cola na esquerda */
@@ -34,53 +30,41 @@ body {
     background-color: #ffffff; /* Fundo opaco necessário para não transparecer o texto rolado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar o efeito de flutuação */
     }
-
 .logo {
     width: 4vw;
     max-height: 8vh;
 }
-
-.home {
+.imghome {
     max-height: 100vh;
     align-items: center;/* alinha os itens verticalmente*/
 }
-
 h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-
 figure img {
     width: 100%;
     height: auto;
     display: block;
 }
-
 .sobre {
     margin: 2%;
     text-align: justify;
 }
-
 .servicos p {
-
     text-align: center;
-
 }
-
 .ulservicos {
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define 4 colunas de tamanhos iguais */
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanhos iguais */
     grid-template-rows: repeat(3, 1fr);  /* Define 3 linhas de tamanhos iguais */  
     gap: 16px; /* Espaçamento opcional entre os itens */
     align-items: first baseline;/* alinha os itens verticalmente*/
     list-style: none;
     margin: 1%;
 }
-
 .liservicos {
-
     border: 2px solid #420000;
     border-radius: 15px;
     padding: 8%;
@@ -88,13 +72,76 @@ figure img {
     transition: background-color 0.5s ease;
     cursor: pointer; /* Transforma o ponteiro em "mãozinha" */
 }
-
 .liservicos:hover {
-
-    background-color: #f8c1a9;
-    
+    background-color: #f8c1a9;  
+}
+.uldepoimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas de tamanhos iguais */
+    grid-template-rows: repeat(2, 1fr);  /* Define 2 linhas de tamanhos iguais */  
+    gap: 16px; /* Espaçamento opcional entre os itens */
+    align-items: first baseline;/* alinha os itens verticalmente*/
+    list-style: none;
+    margin: 1%;
+    justify-content: center;
+}
+.iconuser {
+    max-width: 5%;
+    border: 2px solid #1b0101;
+    border-radius: 50%;
+    padding: 0.7%;
+    background-color: #ffffe5;
+}
+h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.lidepoimentos {
+    border: 2px solid #420000;
+    border-radius: 15px;
+    padding: 8%;
+    background-color: #d7ecfe;
 }
 
+
+form {
+    justify-content: center;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom,  #ead91f, #db348a);
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin: auto
+}
+#Form {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto
+}
+#Form label {
+    margin-bottom: 1%;
+}
+#Form input, #Form textarea {
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#Form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Form button[type="submit"]:hover {
+    background-color: #d518a6;
+    transition: 1000ms;
+}
 /*footer*/
 footer {
     color:#fff;
