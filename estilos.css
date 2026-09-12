@@ -103,6 +103,35 @@ h6 {
     background-color: #d7ecfe;
 }
 
+#boxcontato {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas de tamanhos iguais */
+    grid-template-rows: repeat(1, 1fr);  /* Define 2 linhas de tamanhos iguais */  
+    gap: 16px; /* Espaçamento opcional entre os itens */
+    align-items: first baseline;/* alinha os itens verticalmente*/
+    list-style: none;
+    margin: 1%;
+    justify-content: center;
+
+}
+
+#infcontato {
+
+    justify-content: center;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom,  #1feab7, #9e34db);
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 35%;
+    margin: auto
+
+}
+
+ul li {
+    list-style: none; /* Remove as bolinhas/estilo de lista */
+}
 
 form {
     justify-content: center;
@@ -139,7 +168,7 @@ form {
     cursor: pointer;
 }
 #Form button[type="submit"]:hover {
-    background-color: #d518a6;
+    background-color: #18b9d5;
     transition: 1000ms;
 }
 /*footer*/
